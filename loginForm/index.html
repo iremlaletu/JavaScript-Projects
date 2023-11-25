@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login and Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="container forms">
+        <!--Login form start-->
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+
+                <form id="form" action="#">
+                    <div class="field input-field input-control">
+                        <input id="email" type="text" placeholder="Email" class="input">
+                        <i class='bx bxs-envelope env-icon'></i>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="field input-field input-control">
+                        <input id="password" type="password"  placeholder="Password" class="password">
+                        <i class='bx bxs-hide eye-icon'></i>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot Password?</a>
+                    </div>
+
+                    <div class="check">
+                        <label>
+                            <input type="checkbox"> Remember me </label>  
+                        </label>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit">Log In</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account?
+                        <a href="#" class="link signup-link">Sign Up</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field github">
+                    <i class='bx bxl-github github-icon'></i>
+                    <span>Login with Github</span>
+                </a>
+            </div>
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <i class='bx bxl-google google-icon'></i>
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+        <!--login form end-->
+
+        <!--signup form start-->
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+
+                <form action="#">
+                    <div class="field input-field input-control">
+                        <input id="email" type="email" placeholder="Email" class="input">
+                        <i class='bx bxs-envelope env-icon'></i>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="field input-field input-control">
+                        <input id="password" type="password"  placeholder="Password" class="password">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="field input-field input-control">
+                        <input id="password" type="password"  placeholder="Password" class="password">
+                        <i class='bx bxs-hide eye-icon'></i>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit">Signup</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account?
+                        <a href="#" class="link login-link">login</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field github">
+                    <i class='bx bxl-github github-icon'></i>
+                    <span>Login with Github</span>
+                </a>
+            </div>
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <i class='bx bxl-google google-icon'></i>
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
