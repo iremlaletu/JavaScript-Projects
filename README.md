@@ -6,4 +6,4 @@
 
 ![login](img/practice-list.gif)
 
-![todolist](img/logindemo1.gif)
+![todolist](img/login.gif)
