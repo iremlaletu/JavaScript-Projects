@@ -20,7 +20,7 @@
 
 .form{
     position: absolute;
-    background: #fff;
+    background:indianred;
     border-radius: 6px;
     max-width: 430px;
     width: 100%;
@@ -44,7 +44,7 @@
 header{
     font-size: 28px;
     font-weight: 600;
-    color: #232836;
+    color: #3a4a77;
     text-align: center;
 }
 
@@ -93,7 +93,7 @@ form{
 }
 
 .field button{
-    background-color: #0171d3;
+    background-color: #1f2a47;
     color: #fff;
     transition: all 0.3s ease;
     cursor: pointer;

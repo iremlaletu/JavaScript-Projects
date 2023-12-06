@@ -1,36 +1,102 @@
+
 body {
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    min-width: 400px;
+    background-color: brown;
+    min-width: 500px;
 }
 
-input{
-    padding: 10px 20px;
+.multi-button {
+  border: 1px solid white;
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  
+}
+
+input {
     width: 100%;
+    padding: 15px;
     box-sizing: border-box;
-    border: 1px solid #5f9341;
+    border: 1px solid whitesmoke;
     margin-bottom: 4px;
+    border-radius: 14px;
 }
 
-button {
-    color: white;
-    background-color: #5f9341;
-    padding: 10px 20px;
-    border: none;
-    font-weight: bold;
+#delete-btn {
+  background-color:red;
+  border: 1px solid rgb(85,131,241);
+  
 }
 
-ul{
+#input-btn {
+  background-color: rgb(39,166,75);
+  border: 1px solid rgb(39,166,75);
+  
+}
+
+#tab-btn {
+  background-color: rgb(242,185,42);
+  border: 1px solid rgb(242,185,42);
+  
+}
+
+.button { 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 15px 0 rgba(0, 0, 0, 0.09);
+  padding: 10px 17px 10px 17px;
+  font: 15px Ubuntu;
+  color: white;
+  border-radius: 7px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#delete-btn span:after {
+  content:url("icons/trash.svg");
+}
+
+#input-btn span:after {
+  content:url("icons/copy.svg");
+}
+
+#tab-btn span:after {
+  content:url("icons/globe.svg");
+}
+
+ul {
+    margin-top: 20px;
     list-style: none;
     padding-left: 0;
-    margin-top: 20px;
 }
 
 li {
     margin-top: 5px;
 }
 
-li a {
-    color: #5f9341;
+a {
+    color: whitesmoke;
 }
