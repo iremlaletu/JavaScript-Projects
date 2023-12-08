@@ -1,18 +1,19 @@
-
 body {
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: brown;
-    min-width: 500px;
+    min-width: 600px;
+    background-color:lightsteelblue;
+    background-size: 700px;
 }
 
 .multi-button {
   border: 1px solid white;
   border-radius: 14px;
-  padding: 10px;
+  padding: 18px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
   margin: 10px;
+  text-align: center;
   
 }
 
@@ -23,11 +24,13 @@ input {
     border: 1px solid whitesmoke;
     margin-bottom: 4px;
     border-radius: 14px;
+    background-color:transparent;
+    color:black;
 }
 
 #delete-btn {
   background-color:red;
-  border: 1px solid rgb(85,131,241);
+  border: 1px solid red
   
 }
 
@@ -38,8 +41,8 @@ input {
 }
 
 #tab-btn {
-  background-color: rgb(242,185,42);
-  border: 1px solid rgb(242,185,42);
+  background-color:darkslategray;
+  border: 1px solid darkslategray;
   
 }
 
@@ -87,16 +90,14 @@ input {
   content:url("icons/globe.svg");
 }
 
-ul {
-    margin-top: 20px;
-    list-style: none;
-    padding-left: 0;
-}
-
-li {
-    margin-top: 5px;
+li{
+  margin-top: 20px;
+  padding-left: 0;
+  list-style-image:url(icons/folders.svg);
 }
 
 a {
-    color: whitesmoke;
+  color:black;
+  font: 1em sans-serif italic;
+  
 }

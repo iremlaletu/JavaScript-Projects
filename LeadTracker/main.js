@@ -28,12 +28,12 @@ tabBtn.addEventListener("click", function(){
 function render(leads) {
     let listItems = ""
     for (let i = 0; i < leads.length; i ++){
-        listItems += ` 
+        listItems += `
             <li>
                 <a target='_blank' href="${leads[i]}"> 
-                 ${leads[i]}
+                    ${leads[i]}
                 </a>
-             </li> 
+            </li>
         `
     }
     ulEl.innerHTML = listItems
