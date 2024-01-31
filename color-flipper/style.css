@@ -1,0 +1,38 @@
+main{
+    justify-content: center;
+    height: 15rem;
+    display: grid;
+}
+
+.container{
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+
+div h2{
+    text-align: center;
+}
+
+h3{
+    background: #222;
+    color: #fff;
+    border-radius: 0.25rem;
+}
+
+.color-btn{
+    color: #ecf0f1;
+    font-size: 17px;
+    background-color: #7a0524;
+    border: 2px solid #0e0d0c;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 6px 0px #141211;
+    transition: all .1s;
+}
+
+.color-btn:active{
+    box-shadow: 0px 2px 0px #e7dbd3;
+    position: relative;
+    top: 2px;
+}
