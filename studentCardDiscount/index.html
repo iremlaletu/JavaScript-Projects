@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Card Discount</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to library! </h1>
+    
+        <h3>From Your Library</h3>
+        <ul id="product-list"></ul>
+    
+        <h3>Cart</h3>
+        <ul id="cart"></ul>
+
+        <form id="payment-form" class="form">
+            <input type="text" name="name" id="name-input" placeholder="Enter your first name?"></input> <br><br>
+            <input type="text" name="surname" id="last-input" placeholder="Enter your last name?"></input> <br><br>
+
+            <label for="confirm">Do you have a student card? YES</label>
+            <input type="checkbox" id="confirm" name="confirm">
+            <br><br>
+            <button type="submit">Confirm Cart</button>
+        </form>    
+
+        <p id="demo"></p>
+    </div>
+    
+    <script src="libraryBase.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
