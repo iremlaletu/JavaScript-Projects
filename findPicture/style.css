@@ -1,0 +1,88 @@
+body{
+    background-color:rgb(48, 48, 48);
+}
+.container{
+    border: 1px solid white;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchInput{
+    width: 75%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.button-wrapper{
+    border: 1px solid white;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+}
+
+#searchButton{
+    background-color:darkslategray;
+    border: 1px solid darkslategray;
+}
+
+#clearButton{
+    background-color:red;
+    border: 1px solid red
+}
+
+.button { 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 15px 0 rgba(0, 0, 0, 0.09);
+    padding: 10px 17px 10px 17px;
+    font: 15px Ubuntu;
+    color: white;
+    border-radius: 7px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 15px;
+}
+
+.imageList-wrapper {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 4px 7px grey;
+}
+
+p{
+    color: aliceblue;
+}
