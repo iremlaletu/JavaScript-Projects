@@ -1,12 +1,13 @@
-body{
-    background-color:rgb(48, 48, 48);
+body {
+    background-color:slategrey
 }
+
 .container{
     border: 1px solid white;
     border-radius: 14px;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    margin: 20px auto;;
     text-align: center;
 }
 
@@ -23,7 +24,7 @@ body{
 }
 
 #searchInput{
-    width: 75%;
+    width: 55%;
     padding: 5px;
     border-radius: 10px;
     text-align: center;
@@ -39,6 +40,23 @@ body{
     text-align: center;
 }
 
+.remove-button,
+.favorite-button,
+.moreFind-button{
+    background-color:rosybrown;
+    border: 1px solid darkslateblue;
+    transition: all .1s
+}
+
+.remove-button:active,
+.favorite-button:active,
+.moreFind-button:active{
+    position: relative;
+    top: 2px;
+    box-shadow: 0px 2px 0px #e7dbd3;
+}
+
+
 #searchButton{
     background-color:darkslategray;
     border: 1px solid darkslategray;
@@ -49,6 +67,9 @@ body{
     border: 1px solid red
 }
 
+.remove-button,
+.favorite-button,
+.moreFind-button,
 .button { 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 15px 0 rgba(0, 0, 0, 0.09);
     padding: 10px 17px 10px 17px;
@@ -68,6 +89,7 @@ body{
     padding-right: 15px;
 }
 
+#favorites,
 .imageList-wrapper {
     display: flex;
     flex-direction:row;
@@ -76,13 +98,18 @@ body{
     justify-content: center;
 }
 
-.card{
-    border: 1px solid grey;
+#favorites{
+    margin: 20px;
+    padding: 10px;
+}
+
+.card {
+    border: 1px solid darkslategray;
     border-radius: 5px;
-    padding: 15px;
+    padding: 5px;
     box-shadow: 2px 4px 7px grey;
 }
 
-p{
+p {
     color: aliceblue;
 }
