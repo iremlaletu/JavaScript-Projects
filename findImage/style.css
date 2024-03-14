@@ -40,6 +40,14 @@ body {
     text-align: center;
 }
 
+.cardButtonWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3px;
+}
+
+
 .remove-button,
 .favorite-button,
 .hireUser-button,
