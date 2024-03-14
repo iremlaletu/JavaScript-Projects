@@ -26,3 +26,5 @@
 ![extension](img/extension.gif)
 
 ![student](img/studentDiscount.gif)
+
+![findpicture](img/findPicture.gif)

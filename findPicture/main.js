@@ -6,7 +6,6 @@ const searchButton = document.querySelector("#searchButton")
 const clearButton = document.querySelector("#clearButton")
 const imageWrapper = document.querySelector(".imageList-wrapper")
 const favoritesContainer = document.getElementById('favorites')
-const moreUserPhoto = document.getElementById('userPhoto')
 
 runEventListeners()
 
@@ -18,9 +17,9 @@ function runEventListeners(){
 
 function clear(){
     inputDom.value = ""
-    Array.from(imageWrapper.children).forEach(child => child.remove)
+    // Array.from(imageWrapper.children).forEach(child => child.remove) or
+    imageWrapper.innerHTML = ""
 }
-
 
 function search(e){
     e.preventDefault()
@@ -38,8 +37,8 @@ function search(e){
     .then((data) => { 
     // the result is object so change it to array format so that we can use forEach method
         Array.from(data.results).forEach(images => {
-            //console.log(data)
-            addImageToUI(images.urls.small, images.alt_description, images.likes, images.user.name)
+            // console.log(data)
+            addImageToUI(images.urls.small, images.alt_description, images.likes, images.user.name, images.user.for_hire)
         });
     })
     .catch((err) => console.log(err))
@@ -47,7 +46,11 @@ function search(e){
     imageWrapper.innerHTML = " "
 }
 
-function addImageToUI(url,title,likes,userName){
+// rendering the search input value
+function addImageToUI(url, title, likes, userName, hireUser){
+
+    const heart = document.createElement("div")
+    heart.innerHTML = `<i class="fa-solid fa-heart"></i>`
 
     const div = document.createElement("div")
     div.className = "card";
@@ -58,36 +61,52 @@ function addImageToUI(url,title,likes,userName){
     img.width = "400"
 
     const title_div = document.createElement("p")
+    title_div.className = 'titles'
     title_div.innerHTML = `
-    ${title} <br> 
-    likes: ${likes}  
+    ${title} <br>
+    likes: ${likes} <br> 
     owner: ${userName}
     `
 
-    const cardButton = document.createElement('div')
-    cardButton.innerHTML = `
+    const cardButtons = document.createElement('div')
+    cardButtons.className = "cardButtonWrapper"
+    cardButtons.innerHTML = `
     <button class="favorite-button">Add to Your Picks</button>
     <button class="moreFind-button">More pictures from ${userName}</button>
+    <button class="hireUser-button"> Hire ${userName}</button>
     `
 
-    const favoriteButton = cardButton.querySelector(".favorite-button")
+    const favoriteButton = cardButtons.querySelector(".favorite-button")
     favoriteButton.addEventListener('click', () => {
-        renderPic(url,userName)
-    })
+        renderPic(url,userName,heart)
+        heart.style.color = "red"
+    })    
 
-    const userButton = cardButton.querySelector(".moreFind-button")
+    const userButton = cardButtons.querySelector(".moreFind-button")
     userButton.addEventListener("click", () => {
-        findMoreUserPic(userName)
+        findMoreUserPic(userName,heart)
     })
 
+    const hireButton = cardButtons.querySelector(".hireUser-button")
+    hireButton.addEventListener('click', () => {
+        
+        if(hireUser === true){
+            alert ("is available")
+        } else {
+            alert ("is not available")
+        }
+    })
+
+    div.appendChild(heart)
     div.appendChild(img)
     div.appendChild(title_div)
-    div.appendChild(cardButton)
+    div.appendChild(cardButtons)
+    
     imageWrapper.appendChild(div)
 }
 
-
-function renderPic(url,userName){
+// rendering the favorites & more user other pictures
+function renderPic(url, userName, heart){
     const div = document.createElement("div")
     div.className = "card";
 
@@ -104,10 +123,11 @@ function renderPic(url,userName){
     const removeButton = cardButton.querySelector(".remove-button")
     removeButton.addEventListener('click', () => {
         favoritesContainer.removeChild(div)
+        heart.style.color = "black"
     })
 
     const title_div = document.createElement("p")
-    title_div.innerHTML = ` owner: ${userName}`
+    title_div.innerHTML = ` owner: ${userName} `
 
     div.appendChild(img)
     div.appendChild(cardButton)
@@ -118,7 +138,7 @@ function renderPic(url,userName){
 }
 
 
-function findMoreUserPic(userName){
+function findMoreUserPic(userName, heart){
     fetch(`https://api.unsplash.com/search/users?query=${userName}`,{
         method : "GET",
         headers: {
@@ -130,9 +150,10 @@ function findMoreUserPic(userName){
         //console.log(data)
         Array.from(data.results).forEach(images => {
             (images.photos).forEach(eachphoto => {
-                renderPic(eachphoto.urls.small,userName)
+                renderPic(eachphoto.urls.small, userName, heart)
             })
         });
     })
     .catch((err) => console.log(err))
 }
+

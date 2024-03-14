@@ -1,5 +1,5 @@
 body {
-    background-color:slategrey
+    background-color:rgb(141, 168, 194)
 }
 
 .container{
@@ -40,16 +40,32 @@ body {
     text-align: center;
 }
 
+.cardButtonWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3px;
+}
+
+
 .remove-button,
 .favorite-button,
-.moreFind-button{
+.hireUser-button,
+.moreFind-button,
+.button{
     background-color:rosybrown;
     border: 1px solid darkslateblue;
-    transition: all .1s
+    transition: all .1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 15px 0 rgba(0, 0, 0, 0.09);
+    padding: 10px 17px 10px 17px;
+    font: 15px Ubuntu;
+    color: white;
+    border-radius: 7px;
 }
 
 .remove-button:active,
 .favorite-button:active,
+.hireUser-button:active,
 .moreFind-button:active{
     position: relative;
     top: 2px;
@@ -67,26 +83,16 @@ body {
     border: 1px solid red
 }
 
-.remove-button,
-.favorite-button,
-.moreFind-button,
-.button { 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 15px 0 rgba(0, 0, 0, 0.09);
-    padding: 10px 17px 10px 17px;
-    font: 15px Ubuntu;
-    color: white;
-    border-radius: 7px;
-}
-
 .button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    padding-right: 8px;
 }
 
 .button:hover span {
-    padding-right: 15px;
+    padding-right: 17px;
 }
 
 #favorites,
@@ -104,7 +110,7 @@ body {
 }
 
 .card {
-    border: 1px solid darkslategray;
+    border: 1px solid rgb(62, 112, 112);
     border-radius: 5px;
     padding: 5px;
     box-shadow: 2px 4px 7px grey;
@@ -112,4 +118,9 @@ body {
 
 p {
     color: aliceblue;
+}
+
+.fa-solid{
+    float: right;
+    margin-bottom:5px ;
 }
