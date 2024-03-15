@@ -13,7 +13,7 @@
 5. #### Student Card Discount
     * This is a simple library checkout process where customers can add books to their cart and make payments either with or without a library card, with appropriate discounts applied.
     * I worked on using ES6 features(class,constructor, inheritance) in this project.
-6. #### Find Picture
+6. #### Find Images
     * Fetch the pictures from unsplash.com.
     * I used fontawesome.com to access icons and created an account to integrate them into my HTML page.
 7. #### Exchange Rate
@@ -21,9 +21,11 @@
 ## Demo
 * * *
 
-![login](img/practice-list.gif)
+* 1st Login Form with Signup => 
+* 2nd To Do List => https://iremlaletu-todolist.netlify.app/
+* 6th Find Images => https://iremlaletufindimage.netlify.app/
+* 7th Exchange Rate => https://iremlaletu-exchangerate.netlify.app/
 
-![todolist](img/login.gif)
 
 ![extension](img/extension.gif)
 

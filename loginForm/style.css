@@ -14,13 +14,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1f2a47;
+    background-color: white;
     column-gap: 30px;
 }
 
 .form{
     position: absolute;
-    background:indianred;
+    background:#78a0ee;
     border-radius: 6px;
     max-width: 430px;
     width: 100%;
@@ -44,7 +44,7 @@
 header{
     font-size: 28px;
     font-weight: 600;
-    color: #3a4a77;
+    color: #597bd8;
     text-align: center;
 }
 
@@ -93,7 +93,7 @@ form{
 }
 
 .field button{
-    background-color: #1f2a47;
+    background-color: #b2bddb;
     color: #fff;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -116,7 +116,7 @@ form{
 }
 
 .form a{
-    color: #0171d3;
+    color: #ccdae7;
     text-decoration: none;
 }
 
@@ -128,7 +128,7 @@ form{
     position: relative;
     height: 1px;
     width: 100%;
-    background-color: #d4d4d4;
+    background-color: #b95e5e;
     margin: 36px 0;
 }
 
@@ -174,6 +174,7 @@ a.github .github-icon {
     transform: translateY(-50%);
 }
 
+a.github,
 a.google{
     border: 1px solid #CACACA;
 }
