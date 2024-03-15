@@ -1,6 +1,6 @@
 # JavaScript Projects
 * * *
-## Contains my own projects:
+### Contains my self-improvement projects.
 * * *
 1. #### Login Form with Signup
 2. #### To Do List
@@ -16,6 +16,8 @@
 6. #### Find Picture
     * Fetch the pictures from unsplash.com.
     * I used fontawesome.com to access icons and created an account to integrate them into my HTML page.
+7. #### Exchange Rate
+    * I used freecurrencyapi.com to manage the most recent exchange rate conversions.
 ## Demo
 * * *
 
