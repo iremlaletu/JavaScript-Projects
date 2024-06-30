@@ -58,8 +58,8 @@ function addImageToUI(url, title, likes, userName, hireUser){
 
     const img = document.createElement("img")
     img.setAttribute("src", url)
-    img.height = "400"
-    img.width = "400"
+    img.height = "300"
+    img.width = "300"
 
     const title_div = document.createElement("p")
     title_div.className = 'titles'
@@ -114,7 +114,7 @@ function renderPic(url, userName, heart){
     const img = document.createElement("img")
     img.setAttribute("src", url)
     img.height = "300"
-    img.width = "300"
+    img.width = "400"
 
     const cardButton = document.createElement('div')
 
@@ -131,8 +131,8 @@ function renderPic(url, userName, heart){
     title_div.innerHTML = ` owner: ${userName}`
 
     div.appendChild(img)
-    div.appendChild(cardButton)
     div.appendChild(title_div)
+    div.appendChild(cardButton)
 
     favoritesContainer.appendChild(div)
     favoritesContainer.style.border = '1px solid white'
