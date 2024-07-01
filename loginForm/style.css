@@ -20,7 +20,7 @@
 
 .form{
     position: absolute;
-    background:#78a0ee;
+    background:#4f81e3;
     border-radius: 6px;
     max-width: 430px;
     width: 100%;
@@ -44,7 +44,7 @@
 header{
     font-size: 28px;
     font-weight: 600;
-    color: #597bd8;
+    color: white;
     text-align: center;
 }
 
@@ -105,9 +105,10 @@ form{
 
 .form-link{
     text-align: center;
-    margin-top: 10px;
+    margin: 10px;
 }
 
+.form .check,
 .form-link span,
 .form-link a{
     font-size: 14px;
@@ -128,7 +129,7 @@ form{
     position: relative;
     height: 1px;
     width: 100%;
-    background-color: #b95e5e;
+    background-color: white;
     margin: 36px 0;
 }
 
@@ -138,9 +139,10 @@ form{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
-    color: #232836;
+    background-color: white;
+    color: black;
     padding: 0 15px;
+    border-radius: 2px;
 }
 
 .media-options a{
@@ -150,8 +152,13 @@ form{
 }  
 
 a.github{
-    background-color: #4267b2;
+    background-color: #7b9ee6;
     color: #fff;
+}
+
+a.google{
+    background-color: white;
+    color: black
 }
 
 a.github .github-icon {

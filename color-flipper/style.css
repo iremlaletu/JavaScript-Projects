@@ -10,14 +10,11 @@ main{
     height: 200px;
 }
 
-div h2{
-    text-align: center;
-}
-
-h3{
+h2{
     background: #222;
     color: #fff;
     border-radius: 0.25rem;
+    padding: 5px;
 }
 
 .color-btn{
