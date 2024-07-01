@@ -1,4 +1,5 @@
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -28,7 +29,7 @@ select,
 
 input{
     padding: 5px;
-    margin: 0px 10px;
+   
 }
 
 :placeholder-shown{
@@ -56,4 +57,13 @@ i {
 
 .spin.spinning {
     transform: rotate(180deg);
+}
+
+@media screen and (max-width: 400px){
+    .content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
 }

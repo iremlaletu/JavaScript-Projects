@@ -49,3 +49,7 @@ button:hover {
     border: 1px solid black;
     padding: 5px;
 }
+
+.container p{
+    text-align: center;
+}

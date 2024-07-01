@@ -199,9 +199,9 @@ a.google span{
 }
 
 @media screen and (max-width: 400px){
-    .form{
-        padding: 15px 10px;
-    }   
+    .container{
+        background-color:#4f81e3;
+    }
 }
 
 .input-control input:focus {

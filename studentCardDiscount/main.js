@@ -76,16 +76,19 @@ paymentForm.addEventListener("submit", function(event){
         totalPayment = student1.referral()
 
         document.getElementById("demo").innerHTML = 
-        `Custumer Information: ${firstName} ${lastName}
-        Total payment: ${totalPayment}
+        `Custumer Information: <br> ${firstName} ${lastName}
+        Total payment: ${totalPayment} <br>
         saved: ${cartTotal - totalPayment}
         `
     } else {
         const customer1 = new NotStudent (firstName, lastName, result, cart)
         totalPayment = customer1.referral()
         document.getElementById("demo").innerHTML = 
-        `Custumer Information: ${firstName} ${lastName}
-         Total payment: ${totalPayment}
+        `Custumer Information: <br>
+         ${firstName}
+         ${lastName} <br>
+         Total payment: 
+         ${totalPayment}
         `
     }
 })
