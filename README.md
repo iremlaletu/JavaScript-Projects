@@ -10,7 +10,7 @@
    - Some functionality are not completed. Focused on Css and some javascirpt. When you click Sign up content will be changed.
    - You can hide password when you click eye icon.
 2. #### To Do List
-   - A simple application that allows users to manage their tasks (edit, delete mark as complete).
+   - A simple application that allows users to manage their tasks (edit, delete mark as completed) with localstorage.
 3. #### Chrome Extension (Lead Tracker)
    - I employed query method along with the Chrome Tab API to interact with the browser tab system.
    - Additionally, I implemented the capability to store data in the Local Storage, for saving previous inputs in case of any loss.
@@ -22,7 +22,8 @@
    - I worked on using ES6 features(class,constructor, inheritance) in this project.
 6. #### Find Images
    - Fetch the pictures from unsplash.com.
-   - I used fontawesome.com to access icons and created an account to integrate them into my HTML page.
+   - The function calls the Unsplash API using the fetch method with the user's name as a query. It includes an authorization header with an API key to authenticate the request.
+   - I used fontawesome.com to access icons.
 7. #### Exchange Rate
    - I used freecurrencyapi.com to manage the most recent exchange rate conversions.
 
@@ -34,7 +35,7 @@
 - 2nd To Do List => https://iremlaletu-todolist.netlify.app/
 - 3rd Chrome Extension => Below
 - 4th Color Flipper => https://iremlaletucolorflipper.netlify.app/
-- 5th => https://iremlaletudiscount.netlify.app/
+- 5th Student Card Discount => https://iremlaletudiscount.netlify.app/
 - 6th Find Images => https://iremlaletufindimage.netlify.app/
 - 7th Exchange Rate => https://iremlaletu-exchangerate.netlify.app/
 

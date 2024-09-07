@@ -1,140 +1,129 @@
-
-.container{
-    border: 1px solid white;
-    border-radius: 14px;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
-    margin: 20px auto;;
-    text-align: center;
-    width: 80%;
+.container {
+  border: 1px solid white;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-align: center;
+  width: 80%;
 }
 
 .form-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-#form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#searchInput{
-    width: 55%;
-    padding: 5px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 20px 0px;
+#searchInput {
+  width: 55%;
+  padding: 5px;
+  border-radius: 2px;
+  text-align: center;
+  margin: 20px 0px;
 }
 
-.button-wrapper{
-    display: flex;
-    border: 1px solid white;
-    border-radius: 14px;
-    padding: 18px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    text-align: center;
-    gap: 5px;
+.button-wrapper {
+  display: flex;
+  padding: 18px;
+  margin: 10px;
+  text-align: center;
+  gap: 5px;
 }
 
-.cardButtonWrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 3px;
+.cardButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3px;
 }
-
 
 .remove-button,
 .favorite-button,
 .hireUser-button,
 .moreFind-button,
-.button{
-    background-color:white;
-    border: 1px solid darkslateblue;
-    transition: all .1s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 15px 0 rgba(0, 0, 0, 0.09);
-    padding: 10px 17px 10px 17px;
-    font: 15px Ubuntu;
-    color: black;
-    border-radius: 7px;
-    cursor: pointer;
+.button {
+  background-color: white;
+  border: 1px solid darkslateblue;
+  transition: all 0.1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 15px 0 rgba(0, 0, 0, 0.09);
+  padding: 10px 17px 10px 17px;
+  font: 15px Ubuntu;
+  color: black;
+  border-radius: 7px;
+  cursor: pointer;
 }
-
 
 .remove-button,
 .favorite-button,
 .hireUser-button,
-.moreFind-button{
-    width: 80%;
+.moreFind-button {
+  width: 80%;
 }
 
-.remove-button{
-    margin: 50px;
+#searchButton {
+  background-color: darkslategray;
+  border: 1px solid darkslategray;
 }
 
-#searchButton{
-    background-color:darkslategray;
-    border: 1px solid darkslategray;
-}
-
-#clearButton{
-    background-color:red;
-    border: 1px solid red
+#clearButton {
+  background-color: red;
+  border: 1px solid red;
 }
 
 .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    padding-right: 8px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  padding-right: 8px;
 }
 
 .button:hover span {
-    padding-right: 17px;
+  padding-right: 17px;
 }
 
 #favorites,
 .imageList-wrapper {
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
-#favorites{
-    margin: 20px;
-    padding: 10px;
+#favorites {
+  margin: 20px;
+  padding: 10px;
 }
 
-.card{
-    border: 1px solid rgb(62, 112, 112);
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 2px 4px 7px grey;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    width: 450px;
-    height: 550px;
+.card {
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 4px 7px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 450px;
+  height: 550px;
 }
 
-.card img{
-    width: 80%;
-    align-self: center;   
+.card img {
+  width: 80%;
+  align-self: center;
 }
 
 p {
-    color:black;
-    text-align: center
+  color: black;
+  text-align: center;
 }
 
-.fa-solid{
-    float: right;
-    margin-bottom:5px ;
+.fa-solid {
+  float: right;
+  margin-bottom: 5px;
 }

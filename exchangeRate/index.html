@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,101 +8,100 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6dd24d2e89.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
-    <div class="container">
-        <div id="main">
-            <h3>Exchange Rate</h3>
-            
-            <div class="content-wrapper">
-                
-                <input id="amount" type="number" placeholder="amount"/>
-                
-                <select name="currency" id="firstCurrencyOption">
-                    <option selected>USD</option>
-                    <option>EUR</option>
-                    <option>JPY</option>
-                    <option>BGN</option>
-                    <option>CZK</option>
-                    <option>DKK</option>
-                    <option>GBP</option>
-                    <option>HUF</option>
-                    <option>PLN</option>
-                    <option>RON</option>
-                    <option>SEK</option>
-                    <option>CHF</option>
-                    <option>ISK</option>
-                    <option>NOK</option>
-                    <option>HRK</option>
-                    <option>RUB</option>
-                    <option>TRY</option>
-                    <option>AUD</option>
-                    <option>BRL</option>
-                    <option>CAD</option>
-                    <option>CNY</option>
-                    <option>HKD</option>
-                    <option>IDR</option>
-                    <option>ILS</option>
-                    <option>INR</option>
-                    <option>KRW</option>
-                    <option>MXN</option>
-                    <option>MYR</option>
-                    <option>NZD</option>
-                    <option>PHP</option>
-                    <option>SGD</option>
-                    <option>THB</option>
-                    <option>ZAR</option>
-                </select>
-                
-                <i class="fa-solid fa-arrow-right-arrow-left change"></i>
 
-                <select name="currency" id="secondCurrencyOption">
-                    <option>USD</option>
-                    <option>EUR</option>
-                    <option>JPY</option>
-                    <option>BGN</option>
-                    <option>CZK</option>
-                    <option>DKK</option>
-                    <option>GBP</option>
-                    <option>HUF</option>
-                    <option>PLN</option>
-                    <option>RON</option>
-                    <option>SEK</option>
-                    <option>CHF</option>
-                    <option>ISK</option>
-                    <option>NOK</option>
-                    <option>HRK</option>
-                    <option>RUB</option>
-                    <option selected>TRY</option>
-                    <option>AUD</option>
-                    <option>BRL</option>
-                    <option>CAD</option>
-                    <option>CNY</option>
-                    <option>HKD</option>
-                    <option>IDR</option>
-                    <option>ILS</option>
-                    <option>INR</option>
-                    <option>KRW</option>
-                    <option>MXN</option>
-                    <option>MYR</option>
-                    <option>NZD</option>
-                    <option>PHP</option>
-                    <option>SGD</option>
-                    <option>THB</option>
-                    <option>ZAR</option>
-                </select>
+    <div id="main">
+        <h3>Exchange Rate</h3>
 
-                <input type="number" id="result" readonly placeholder="result"/>
+        <div class="content-wrapper">
 
-            </div>
+            <input id="amount" type="number" placeholder="amount" />
 
-            <button class="button" id="exchangeButton">
-                <i class="fa-solid fa-rotate spin" ></i>
-            </button>
+            <select name="currency" id="firstCurrencyOption">
+                <option selected>USD</option>
+                <option>EUR</option>
+                <option>JPY</option>
+                <option>BGN</option>
+                <option>CZK</option>
+                <option>DKK</option>
+                <option>GBP</option>
+                <option>HUF</option>
+                <option>PLN</option>
+                <option>RON</option>
+                <option>SEK</option>
+                <option>CHF</option>
+                <option>ISK</option>
+                <option>NOK</option>
+                <option>HRK</option>
+                <option>RUB</option>
+                <option>TRY</option>
+                <option>AUD</option>
+                <option>BRL</option>
+                <option>CAD</option>
+                <option>CNY</option>
+                <option>HKD</option>
+                <option>IDR</option>
+                <option>ILS</option>
+                <option>INR</option>
+                <option>KRW</option>
+                <option>MXN</option>
+                <option>MYR</option>
+                <option>NZD</option>
+                <option>PHP</option>
+                <option>SGD</option>
+                <option>THB</option>
+                <option>ZAR</option>
+            </select>
+
+            <i class="fa-solid fa-arrow-right-arrow-left change"></i>
+
+            <select name="currency" id="secondCurrencyOption">
+                <option>USD</option>
+                <option>EUR</option>
+                <option>JPY</option>
+                <option>BGN</option>
+                <option>CZK</option>
+                <option>DKK</option>
+                <option>GBP</option>
+                <option>HUF</option>
+                <option>PLN</option>
+                <option>RON</option>
+                <option>SEK</option>
+                <option>CHF</option>
+                <option>ISK</option>
+                <option>NOK</option>
+                <option>HRK</option>
+                <option>RUB</option>
+                <option selected>TRY</option>
+                <option>AUD</option>
+                <option>BRL</option>
+                <option>CAD</option>
+                <option>CNY</option>
+                <option>HKD</option>
+                <option>IDR</option>
+                <option>ILS</option>
+                <option>INR</option>
+                <option>KRW</option>
+                <option>MXN</option>
+                <option>MYR</option>
+                <option>NZD</option>
+                <option>PHP</option>
+                <option>SGD</option>
+                <option>THB</option>
+                <option>ZAR</option>
+            </select>
+
+            <input type="number" id="result" readonly placeholder="result" />
 
         </div>
+
+        <button class="button" id="exchangeButton">
+            <i class="fa-solid fa-rotate spin"></i>
+        </button>
     </div>
 
     <script src="main.js"></script>
 </body>
+
 </html>

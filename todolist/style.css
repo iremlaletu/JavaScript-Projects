@@ -1,148 +1,155 @@
-:root{
-    --orange : #e772a4;
-    --orange: #ff9c27;
-    --bg:#ec3b14;
-    --primarytext: #cff2d1;
+:root {
+  --primarytext: #1e1a18;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: #382c0f;
-}
-header{
-    padding: 2rem 1rem;
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-}
-header h1{
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: var(--primarytext);
-    margin-bottom: 1.5rem;
-}
-#task-form{
-    display: flex;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-input,button{
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f8f8ff;
 }
 
-#task-input{
-    flex: 1 1 0%;
-    background-color: var(--bg);
-    padding: 1rem;
-    border: 1px solid var(--primarytext);
-    border-radius: 1rem;
-    margin-right: 1rem;
-    color: var(--primarytext);
-    font-size: 1.25rem;
-}
-#task-input::placeholder{
-    color: var(--primarytext);
-}
-#task-submit{
-    color: var(--primarytext);
-    font-size: 1.25rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.4s;
-    border: 1px solid var(--primarytext);
-    border-radius: 1rem;
-    padding: 1rem;
+header {
+  padding: 2rem 1rem;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-#task-submit:hover{
-    opacity: 0.8;
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primarytext);
+  margin-bottom: 1.5rem;
 }
 
-#task-submit:active{
-    opacity: 0.6;
-}
-.container{
-    background: var(--bg);
-    flex: 0% 1 0%;
-    max-width: 750px;
-    width: 100%;
-    margin: 2rem auto;
-    border-radius: 1rem;
-}
-main{
-    flex: 1 1 0%;
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
+#task-form {
+  display: flex;
 }
 
-.task-list{
-    padding: 1rem;
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
 }
 
-#tasks .task{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--bg);
-    border: 1px solid var(--orange);
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
-#tasks .task .content{
-    flex: 1 1 0%;
-}
-#tasks .task .content .text{
-    color: var(--primarytext);
-    font-size: 1.13rem;
-    width: 100%;
-    display: block;
-    transition: 0.4s;
-}
-#tasks .task .content .text:not(:read-only){
-    color: var(--lightblue);
-}
-#tasks .task .actions{
-    display: flex;
-    margin: 0 -0.5rem;
+#task-input {
+  flex: 1 1 0%;
+  padding: 1rem;
+  border: 1px solid var(--primarytext);
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  color: var(--primarytext);
+  font-size: 1.25rem;
 }
 
-.task .actions button{
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 800;
-    margin: 0 0.5rem;
-    text-transform: uppercase;
-    transition: 0.4s;
-}
-.task .actions button:hover{
-    opacity: 0.8;
+#task-input::placeholder {
+  color: var(--primarytext);
 }
 
-.task .actions button:active{
-    opacity: 0.6;
+#task-submit {
+  color: var(--primarytext);
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 1px solid var(--primarytext);
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
-.task .actions .Edit{
-    color: var(--lightgreen);
+
+#task-submit:hover {
+  opacity: 0.8;
 }
-.task .actions .cancel{
-    color: crimson;
-    cursor: pointer;
+
+#task-submit:active {
+  opacity: 0.6;
 }
-.task .actions .Completed{
-    color: var(--orange)
+.container {
+  flex: 0% 1 0%;
+  max-width: 750px;
+  width: 100%;
+  margin: 2rem auto;
+}
+main {
+  flex: 1 1 0%;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primarytext);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#tasks .task .content {
+  flex: 1 1 0%;
+}
+
+#tasks .task .content .text {
+  font-size: 1.13rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+#tasks .task .content .text:not(:read-only) {
+  color: rgb(156, 223, 246);
+}
+
+#tasks .task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0 0.5rem;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task .actions button:hover {
+  opacity: 0.8;
+}
+
+.task .actions button:active {
+  opacity: 0.6;
+}
+
+.task .actions .Edit {
+  color: rgb(239, 239, 166);
+}
+
+.task .actions .cancel {
+  color: red;
+  cursor: pointer;
+}
+
+.task .actions .Completed {
+  color: var(--primarytext);
 }
 
 .strike {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
